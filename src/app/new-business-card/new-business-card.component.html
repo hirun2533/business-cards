@@ -1,0 +1,43 @@
+
+  <div class="form-style-5">
+  
+        <form #cardTemplate="ngForm" ngControl="cardTemp"> 
+            
+          <div class="alert" *ngIf="cardTemplate.invalid&&this.applycard">
+            <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
+            <strong>Danger!</strong>  Fields are Missing.
+          </div>      
+
+          
+          <div class="success" *ngIf="this.succesfulAdd && !this.applycard">
+              <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
+              <strong>Successful!</strong>  Business card is added.
+            </div> 
+
+         <fieldset>
+            <legend><span class="number">1</span>Business-Card Info</legend>
+    
+   
+                <input type="text"  placeholder="Your Name *" required [(ngModel)]="Card.firstname" #firstname="ngModel"  name="field1">
+                
+                <input type="text" placeholder="Your Lastname *" required [(ngModel)]="Card.lastname" #lastname="ngModel" name="field2" >
+                <input type="text" placeholder="Your position *" required [(ngModel)]="Card.position" #position="ngModel" name="field3" >
+                <input type="text" placeholder="Your address *" required [(ngModel)]="Card.address" #address="ngModel" name="field4" >
+
+    
+                  <input type="text"  placeholder="You company *" required [(ngModel)]="Card.company" name="field5" #company="ngModel">
+                  <input type="text" placeholder="Your phone number *" required [(ngModel)]="Card.phone" name="field7" #phone="ngModel">
+
+                <input type="text"  placeholder="You email *" required [(ngModel)]="Card.email" name="field6" #email="ngModel">
+         
+              <button type="button" (click)= "addnewCard()">
+              Apply  </button>
+
+          </fieldset>
+        </form>
+      </div>
+
+   
+  
+  
+    

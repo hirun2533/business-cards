@@ -1,0 +1,89 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
+<table>
+
+    <tr class ="column" *ngFor="let yourcard of Cards; let c = index" [attr.data-index]="c">
+      
+            <div class="card">
+                
+              <h1 style="color:  rgb(185, 184, 184);">{{yourcard.firstname}} {{yourcard.lastname}}</h1>
+              <HR WIDTH="75%" COLOR="#FF0000" SIZE="4">
+              <h3>{{yourcard.position}}</h3>
+              <h3>{{yourcard.company}}</h3>
+              <p>{{yourcard.address}}</p>
+              <p>{{yourcard.phone}}</p>
+              <p>{{yourcard.email}}</p>
+           
+             
+            </div>
+         
+            <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+            <button class="btnedit" (click)="updateStart(this.yourcard)">
+                <i class="fas fa-edit"></i>
+                Edit</button>
+       
+
+            <button class="btn" (click)="carddelete(this.yourcard)"><i class='fa fa-trash'></i> Delete</button>
+
+      <span *ngIf="yourcard.num == numCard">
+      
+        <div class="fix">
+        <div (click)="updateEnd()">
+          <button class="close">&times;</button>
+        </div>
+
+      
+            <label class="namecard" for="firstname">Firstname:</label>
+            <input class="fillbox" placeholder="firstname" [(ngModel)]="yourcard.firstname">
+            
+        <br>
+        
+            <label class="namecard" for="lastname">Lastname:</label>
+            <input class="fillbox" placeholder="lastname" [(ngModel)]="yourcard.lastname">
+            
+       <br>
+       <label class="namecard" for="position">Position: </label>
+       <input class="fillbox" placeholder="position" [(ngModel)]="yourcard.position">
+
+
+
+        <br>
+        
+              <label class="namecard" for="company">Company: </label>
+              <input class="fillbox" placeholder="company" [(ngModel)]="yourcard.company">
+             
+
+          <br>
+
+          <label class="namecard" for="company">Address: </label>
+          <input class="fillbox" placeholder="address" [(ngModel)]="yourcard.address">
+          
+
+          <br>
+        
+                <label class="namecard" for="phone">Phone Number:</label>
+                <input class="fillbox" placeholder="phone number" [(ngModel)]="yourcard.phone">
+
+        <br>
+        
+                <label class="namecard"  for="email">Email: </label>
+                <input class="fillbox" placeholder="email" [(ngModel)]="yourcard.email">
+            
+        <br>
+          <button class="btndone" (click)="cardupdate(yourcard)">
+            <i class="fa fa-check"></i>
+            &nbsp;Done
+          </button>
+   
+  
+      </div>
+    </span>
+   
+    </tr>
+  </table>
+  
+  
+  
+  
+  

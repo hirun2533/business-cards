@@ -1,0 +1,42 @@
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+ 
+<div id="nav">
+    <div id="nav"> 
+        
+      <li> <a href="#home" style="text-decoration:none" class="logocard">Business Card</a>
+    
+     </li> 
+   
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<form class="example" action="action_page.php">
+  <input type="text" placeholder="Search.." name="search">
+  <button type="submit"><i class="fa fa-search"></i></button>
+</form>
+
+    <ul>
+      <li><a routerLink="/new-businesscard" class="#newcard"  routerLinkActive="active">
+        <i class="fas fa-user-plus"></i>  Add your card</a>
+    </li>
+    <li><a routerLink="/businesscards" class="#business"  routerLinkActive="active">
+      <i class="far fa-address-book"></i>  Dashboard</a>
+    </li>
+    <li><a  routerLink="/profile" class="#profile" routerLinkActive="active">
+      <i class="far fa-id-badge"></i>  Profile</a>
+    </li>
+
+    <li><a  routerLink="/image" class="#profile" routerLinkActive="active">
+      <i class="fas fa-camera-retro"></i> Webcam</a>
+    </li>
+     <span *ngIf="authService.isLoggedIn()" class="#nav">
+        
+        <li> <app-logout></app-logout></li>
+     </span>
+     
+    </ul>
+        </div>
+   
+    </div>
+   
+
+<router-outlet></router-outlet>

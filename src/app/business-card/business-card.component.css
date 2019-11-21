@@ -1,0 +1,179 @@
+
+* {
+  box-sizing: border-box;
+}
+
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.column{
+  float: left;
+  position: relative;
+  width: 400px;
+  padding: 10px; 
+  top: 100px;
+  left:80px;
+  margin: 100px;
+  max-width:400px;
+}
+
+/* Remove extra left and right margins, due to padding in columns */
+.row {margin: 10 -5px;}
+
+/* Clear floats after the columns */
+.row:after {
+   content: ""; 
+  display: table;
+   clear: both; 
+   overflow: auto;
+}
+
+/* Style the counter cards */
+.card {
+  box-shadow: 0 4px 8px 0 rgba(250, 244, 244, 0.2); 
+  
+  padding: 20px;
+  height: 220px;
+  text-align: center;
+  background-color: #1B1B1B
+
+
+  /* background-color:rgb(233, 225, 204); */
+}
+.namecard{
+  padding: 10px 10px;
+  position: relative;
+  left: 15px;
+  top:0px;
+
+  right: 10px;
+  text-align: left;
+  color: white;
+
+  /* display: block; */
+}
+.fillbox{
+  width: 60%;
+  height: 10px;
+  padding: 10px;
+  position: relative;
+  top: 0px;;
+  right: 30px;
+  left: 25px;
+  text-align: justify;
+  background-color: #1B1B1B;
+  color: white;
+
+}
+
+.fix{
+  box-shadow: 0 4px 8px 0 rgba(250, 244, 244, 0.2); 
+  position: relative;
+  top:30px;
+  padding: 5px;
+  height: 220px;
+  text-align: left;
+  background-color: #1B1B1B;
+
+}
+
+.fix input {
+  width: 60%;
+  
+  clear: both;
+  border-color: grey;
+ 
+}
+
+h1 {
+  
+  font-family: 'amita';
+  color: rgb(185, 184, 184);
+  letter-spacing: 3px;
+  font-size: 100%;
+  
+  line-height: 1.6;
+  text-align: center
+
+}
+p  {
+  color:  rgb(185, 184, 184);
+  font-family: Optima, sans-serif;
+  line-height: 5%;
+  font-size: 80%;
+  padding: 5px;
+}
+h3  {
+  /* color: rgb(15, 1, 1); */
+  font-family: Optima, sans-serif;
+  /* font-style: bold; */
+  letter-spacing: 2px;
+  color:  rgb(185, 184, 184);
+  line-height: 5%;
+  font-size: 80%;
+  padding: 5px;
+
+}
+.btn {
+  background-color: rgb(48, 50, 51);
+  border: none;
+  color: white;
+  padding: 10px 12px;
+  position: relative;
+  left: 243px;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+/* Darker background on mouse-over */
+.btn:hover {
+  background-color:rgb(48, 50, 51);
+}
+input{
+  display: table-cell;
+}
+
+.btndone {
+  background-color: rgb(48, 50, 51);
+  border: none;
+  color: white;
+  padding: 10px 12px;
+  position: relative;
+  left: 303px;
+  top:11px;
+  /* bottom: 20px; */
+  font-size: 12px;
+  cursor: pointer;
+}
+.btnedit{
+  background-color: rgb(48, 50, 51);
+  border: none;
+  color: white;
+  padding: 10px 12px;
+  position: relative;
+  left: 243px;
+  font-size: 12px;
+  cursor: pointer;
+
+}
+.close{
+  background-color:#1B1B1B;
+  border: none;
+  color: white;
+  padding: 10px 12px;
+  position: relative;
+  left: 343px;
+  bottom: 5px;
+  /* top:23px; */
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.btn:focus,
+.btnedit:focus {     
+  background-color:red;  
+
+}
