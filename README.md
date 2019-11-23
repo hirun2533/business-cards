@@ -11,9 +11,13 @@ FireBase Url.
 https://business-card-257220.firebaseapp.com/
 
 2. Road blocks and challenges.
+
+- I created most of the project cards requirements which are, 
+- Components (BusinessCard, BusinessCards, NewBusinessCard, WebCam, Login, Logout and NotFound)
+- Services (AuthService -firebase login, logout)
+  BusinessCard - CREATE,READ,UPDATE,DESTROY.
  
-- My business card can work on sign-in, sign out 
-- add a new card, but it can't use cameara for convert image and add to the business card in dash board.
+- My business card can work on sign-in, sign out and add fill form a new card.
 
 
 3. If needed, Instructions for how to run ÔøΩenter username and password.
