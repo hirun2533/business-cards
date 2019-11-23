@@ -46,7 +46,7 @@ export class AuthService {
       localStorage.setItem('username', 'user');
       this.text = '';
       console.log('logIN???!!!');
-      this.router.navigate(['/new-businesscard']);
+      this.router.navigate(['/businesscards']);
     }).catch(err => {this.text = 
       'Username or Password is not correct Please try again'; });
   }

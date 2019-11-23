@@ -114,7 +114,7 @@ li:before {
 li:nth-child(2):before {content: "\f003"}
 li:nth-child(3):before {content: "\f0c1"} */
 
-li:nth-child(1):before {content: "\f003"}
+li:nth-child(1):before {content: "\f095"}
 li:nth-child(2):before {content: "\f0c1"}
 /* li:nth-child(3):before {content: "\f0c1"} */
 
